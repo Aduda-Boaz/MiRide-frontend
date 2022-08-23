@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  position: relative;
+
+  h3 {
+    margin-left: 2rem;
+    font-weight: 900;
+  }
+
+  .sidebar-nav > a {
+    display: block;
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-left: 2rem;
+
+    &:hover {
+      opacity: 0.8;
+      transition: all 0.25s ease;
+      background: rgb(151, 191, 15);
+      cursor: pointer;
+    }
+  }
+}
