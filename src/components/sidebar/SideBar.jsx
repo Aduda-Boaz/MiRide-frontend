@@ -1,5 +1,6 @@
 import React from 'react';
 import './SideBar.scss';
+import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 const navItems = [
   { url: '/mentors', name: 'MENTORS' },
@@ -19,6 +20,17 @@ const SideBar = () => (
           {item.name}
         </a>
       ))}
+    </div>
+    <div className="sidebar-footer">
+      <div className="social-icons">
+        <FaFacebook />
+        <FaTwitter />
+        <FaLinkedin />
+        <FaWhatsapp />
+      </div>
+      <div className="copyright">
+        <p>&copy; MentorMe 2022</p>
+      </div>
     </div>
   </div>
 );
