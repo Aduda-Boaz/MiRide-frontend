@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { configureStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
@@ -6,7 +7,7 @@ import { fetchMentors } from './actions/mentorActions';
 
 export const store = configureStore({
   reducer: reducers,
-  middleware: applyMiddleware(thunk, logger)
+  middleware: applyMiddleware(thunk, logger),
 });
 store.dispatch(fetchMentors());
 

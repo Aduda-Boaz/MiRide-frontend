@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 export const BookingConstants = {
   ALL_MENTORS: 'ALL_MENTORS',
   GET_MENTOR_ID: 'GET_MENTOR_ID',
