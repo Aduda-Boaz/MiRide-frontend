@@ -1,0 +1,27 @@
+$text-color: #fafafa;
+$text-color-dark: #121212;
+$text-color-light: rgba(141, 197, 10, 0.788);
+$background-color: rgba(226, 217, 217, 0.945);
+$font-family: 'Lato', sans-serif;
+$border-size: 4px solid $text-color-dark;
+$border: 3px solid $text-color;
+$border-shadow: 10px 8px 16px rgba(89, 178, 219, 0.384);
+
+@mixin d-flex($position) {
+  display: flex;
+  align-items: center;
+  justify-content: $position;
+}
+
+%main {
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px 30px;
+  font-family: $font-family;
+}
+
+%border-container { 
+  border-radius: 5px;
+  box-shadow: $border-shadow;
+  border: var(--border-size);
+}

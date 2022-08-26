@@ -1,6 +1,11 @@
 import React from 'react';
 import './SideBar.scss';
-import { FaFacebook, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaTwitter,
+  FaWhatsapp,
+} from 'react-icons/fa';
 
 const navItems = [
   { url: '/mentors', name: 'MENTORS' },
@@ -15,7 +20,7 @@ const SideBar = () => (
       <h3>MentorMe</h3>
     </div>
     <div className="sidebar-nav">
-      {navItems.map(item => (
+      {navItems.map((item) => (
         <a href={item.url} key={item.name}>
           {item.name}
         </a>
